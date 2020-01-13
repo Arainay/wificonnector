@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="wificonnector" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>WiFiConnector</name>
+    <js-module name="WiFiConnector" src="www/WiFiConnector.js">
+        <clobbers target="wificonnector" />
+    </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="WiFiConnector">
+                <param name="ios-package" value="WiFiConnector"/>
+            </feature>
+        </config-file>
+        <source-file src="src/ios/WiFiConnector.swift"/>
+    </platform>
+</plugin>

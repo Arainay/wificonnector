@@ -1,0 +1,12 @@
+{
+  "name": "WiFiConnector",
+  "version": "1.0.0",
+  "scripts": {
+    "create-plugin": "plugman create --name WiFiConnector --plugin_id wificonnector --plugin_version 0.0.1 --path wificonnectorplugin"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "cordova": "^9.0.0",
+    "plugman": "^3.0.1"
+  }
+}
